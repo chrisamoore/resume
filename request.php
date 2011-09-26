@@ -5,7 +5,7 @@
 	// handle DB cons
 	$db = mysql_connect('localhost', 'root', 'root') or die("Uh-oh you broke the Database");
 	mysql_select_db("cam_resume", $db);
-	//*--------------------------RDB CALL------------------------------------------------*/ 
+	//*--------------------------Dynamic RDB CALL------------------------------------------------*/ 
 	
 	$cat = mysql_query("SELECT id FROM `categories` WHERE `name` = '$request' ;");
 	while ($rows = mysql_fetch_row($cat)) 
@@ -24,5 +24,5 @@
 				        echo(''.$r.'<br/>');
 				    }
 			}
-	//*---------------------------RDB CALL-----------------------------------------------*/ 
+	//*---------------------------Dynamic RDB CALL-----------------------------------------------*/ 
 ?>

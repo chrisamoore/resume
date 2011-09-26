@@ -70,7 +70,9 @@ ini_set("display_errors", 1);
 		</nav>
 	</aside>	
 	<section>
-		
+		<div id="result">
+			Bio info here
+		</div>
 	</section>
 </body>
 </html>
